@@ -1,2 +1,2 @@
 #!/bin/bash
-{line:0:1}
+${line:0:1}
