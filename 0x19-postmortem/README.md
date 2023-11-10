@@ -1,6 +1,6 @@
 # Postmortem
 
-About 06:07 West African Time (PST), when ALX's System Engineering & DevOps project 0x19 was released, an outage happened on an isolated Ubuntu 14.04 container that was running an Apache web server. When an HTML file specifying a basic Holberton WordPress site was expected as response to GET queries on the server, `500 Internal Server Error` messages were sent.
+About 06:07 West African Time (WAT), when ALX's System Engineering & DevOps project 0x19 was released, an outage happened on an isolated Ubuntu 14.04 container that was running an Apache web server. When an HTML file specifying a basic Holberton WordPress site was expected as response to GET queries on the server, `500 Internal Server Error` messages were sent.
 
 ## Debugging process
 
