@@ -1,0 +1,16 @@
+[Unit]
+Description=Gunicorn instance to serve Airbnb Flask application
+After=network.target
+
+[Service]
+User=moschifire
+Group=moschifire
+WorkingDirectory=/AirBnB_clone_v2/
+ExecStart=/usr/local/bin/gunicorn -b 0.0.0.0:5003 -w 3 web_dynamic.2-hbnb:app
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
